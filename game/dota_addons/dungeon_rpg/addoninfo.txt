@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	maps				"Act_1"
+	"IsPlayable"			"1"
+	"PenaltiesEnabled"		"0"
+	"Act_1"
+	{
+		"MaxPlayers"		"3"
+	}
+}

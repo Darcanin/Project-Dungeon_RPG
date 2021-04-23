@@ -1,0 +1,21 @@
+.Inventory {
+    width: 160px;
+    height: 50px;
+    margin: 50px 0 100px 0;
+
+    horizontal-align: right;
+    vertical-align: bottom;
+
+    background-color: rgba(55, 0, 128, 0.4);
+}
+.Tspace {
+    /* width: 100%;
+    height: 100%; */
+
+    horizontal-align: center;
+    vertical-align: center;
+}
+.Textlabel {
+    font-size: 24px;
+    color: #fff;
+}

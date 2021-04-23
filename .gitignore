@@ -1,0 +1,22 @@
+/*
+!/.gitignore
+
+
+!/content/
+/content/*
+
+!/content/dota_addons/
+/content/dota_addons/*
+
+!/content/dota_addons/dungeon_rpg/
+# /content/dota_addons/dungeon_rpg/*
+
+
+!/game/
+/game/*
+
+!/game/dota_addons/
+/game/dota_addons/*
+
+!/game/dota_addons/dungeon_rpg/
+# /game/dota_addons/dungeon_rpg/*

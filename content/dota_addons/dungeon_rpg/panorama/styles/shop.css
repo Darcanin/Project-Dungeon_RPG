@@ -1,0 +1,20 @@
+.Shop {
+    width: 160px; 
+    height: 50px;
+
+    horizontal-align: right;
+    vertical-align: bottom;
+
+    background-color: rgba(55, 0, 128, 0.4);
+}
+.Tspace {
+    /* width: 100%;
+    height: 100%; */
+
+    horizontal-align: center;
+    vertical-align: center;
+}
+.Textlabel {
+    font-size: 32px;
+    color: #fff;
+}

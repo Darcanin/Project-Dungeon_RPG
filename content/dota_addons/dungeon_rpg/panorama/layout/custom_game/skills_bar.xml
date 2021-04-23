@@ -1,0 +1,64 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/skills_bar.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/skills_bar.js" />
+    </scripts> 
+
+    <snippets>
+    </snippets>
+
+    <Panel class="SkillsBarCont">
+
+        <Panel id="SkillsCont" class="SkillsCont">
+            <DOTAAbilityList id="abilities" hittest="false"/>
+            <!-- <DOTAAbilityPanel id="Ability0" class="PanelClass" abilityname="ability_base_leap" /> -->
+        </Panel>
+
+        <!-- <Panel id="Tspace1" class="Tspace">
+            
+            <Panel id="QWE" class="QWE">
+                <Panel id="press_Q" class="button1 press_Q">
+                    <Label id="TextLabel1" class="SkillButtonLabel" text="Q" />
+                </Panel>
+                <Panel id="press_W" class="button1 press_W">
+                    <Label id="TextLabel2" class="SkillButtonLabel" text="W" />
+                </Panel>
+                <Panel id="press_E" class="button1 press_E">
+                    <Label id="TextLabel3" class="SkillButtonLabel" text="E" /> 
+                </Panel>
+            </Panel>
+
+            <Panel id="DA" class="DA">
+                <Panel id="press_A" class="button1 press_A">
+                    <Label id="TextLabel4" class="SkillButtonLabel" text="A" />
+                </Panel>
+                <Panel id="press_pusto" class="button1 press_pusto">
+                    <Label id="TextLabel5" class="SkillButtonLabel" text="" />
+                </Panel>
+                <Panel id="press_D" class="button1 press_D">
+                    <Label id="TextLabel6" class="SkillButtonLabel" text="D" />
+                </Panel>
+            </Panel>
+        </Panel>
+
+        <Panel id="WhitespaceButton" class="WhitespaceButton">
+            <Label id="TextLabel7" class="SkillButtonLabel" text="Whitespace " />
+        </Panel>
+
+        <Panel id="LR" class="LR">
+            <Panel id="press_L" class="button2 press_L">
+                <Label id="TextLabel8" class="SkillButtonLabel" text="L" />
+            </Panel>
+            <Panel id="press_R" class="button2 press_R">
+                <Label id="TextLabel9" class="SkillButtonLabel" text="R" />
+            </Panel>
+        </Panel> -->
+
+
+
+    </Panel>
+
+</root>

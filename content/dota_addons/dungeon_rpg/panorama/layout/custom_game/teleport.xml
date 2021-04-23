@@ -1,0 +1,20 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/teleport.css" />
+    </styles>
+
+    <!-- <scripts>
+        <include src="file://{resources}/scripts/aggression.js" />
+    </scripts> -->
+
+    <snippets>
+    </snippets>
+
+    <Panel class="Teleport">
+        <Panel id="Tspace2" class="Tspace">
+            <Label id="Text" class="Textlabel" text="TELEPORTS" />
+            
+        </Panel>
+    </Panel>
+
+</root>

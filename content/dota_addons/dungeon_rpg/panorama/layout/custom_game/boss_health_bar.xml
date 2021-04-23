@@ -1,0 +1,19 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/boss_health_bar.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/boss_health_bar.js" />
+    </scripts> 
+
+    <snippets>
+    </snippets>
+
+    <Panel class="BossHealthBar">
+        <Panel id="HealthBar" class="HealthBar">
+            <Label id="HealthBarText" class="HealthBarText" text="HP BOSS" />
+        </Panel>
+    </Panel>
+
+</root>

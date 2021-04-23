@@ -1,0 +1,22 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/disable_default_ui.js" />
+   		<include src="file://{resources}/scripts/camera.js" />
+		<include src="file://{resources}/scripts/custom_binds.js" />
+   </scripts>
+	<Panel>
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/aggression.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/quests.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/screen_saver.xml" />
+
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/hero_interface.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/skills_bar.xml" />
+
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/teleport.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/inventory.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/boss_health_bar.xml" />
+
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/talent.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/profession.xml" />
+	</Panel>
+</root>

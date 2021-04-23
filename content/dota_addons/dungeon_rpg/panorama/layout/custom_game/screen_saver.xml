@@ -1,0 +1,11 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/screen_saver.css" />
+    </styles>
+	<scripts>
+		<include src="file://{resources}/scripts/screen_saver.js"/> 
+	</scripts>
+    <Panel class="hud_main">
+        <Panel id="Main_HUD"></Panel>
+    </Panel>
+</root>

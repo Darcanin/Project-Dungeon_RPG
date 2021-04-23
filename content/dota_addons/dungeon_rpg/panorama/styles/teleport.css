@@ -1,0 +1,21 @@
+.Teleport {
+    width: 160px;
+    height: 50px;
+    margin: 0 0 50px 0px;
+
+    horizontal-align: right;
+    vertical-align: bottom;
+
+    background-color: rgba(55, 0, 128, 0.9);
+}
+.Tspace {
+    /* width: 100%;
+    height: 100%; */
+
+    horizontal-align: center;
+    vertical-align: center;
+}
+.Textlabel {
+    font-size: 24px;
+    color: #fff;
+}

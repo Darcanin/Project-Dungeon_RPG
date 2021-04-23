@@ -1,0 +1,53 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/quests.css" />
+    </styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/quests.js"/> 
+	</scripts>
+
+    <snippets>
+
+        <snippet name="Quest">
+            <Panel class="Quest">
+                <Panel id="LeftSide" class="LeftSide">
+                    <Panel id="QuestImage">
+
+                    </Panel>
+                </Panel>
+                <Panel id="RightSide">
+                    <Panel id="TopSide">
+                        <Label id="QuestTitle" text="#Quest_title" />
+                    </Panel>
+                    <Panel id="BottomSide">
+                        <Panel id="Background" class="bgd"/>
+                        <Label id="QuestDescription" text="#Quest_Desc" />
+                        <Label id="QuestProgress" text="0/1" />
+                    </Panel>
+                </Panel>
+            </Panel>
+        </snippet>
+
+    </snippets>
+
+
+    <Panel class="questmine">
+        <Label id="textd" class="textd" text="Quests" />
+    </Panel>
+
+    <!-- <Panel class="Kekw">
+        <Panel class="QuestTitle">
+            <Label class="Quest_Title" text="#Quests_Title"/>
+        </Panel>
+            
+        <Panel id="Quests">
+            
+        </Panel>
+
+
+    </Panel> -->
+
+
+
+</root>

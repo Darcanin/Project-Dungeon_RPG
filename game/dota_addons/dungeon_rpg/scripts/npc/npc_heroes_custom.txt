@@ -1,0 +1,812 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_dragon_knight"
+	{
+		"Model"					"models/heroes/dragon_knight/dragon_knight.vmdl"
+		"SoundSet"				"Hero_DragonKnight"
+		"ModelScale"			"0.5"
+		"VersusScale"			"0.5"
+		"HeroSelectSoundEffect"		"Hero_DragonKnight.Pick"
+		"Ability1"		"ability_base_leap"
+		"Ability2"		"ability_base_attack_sven"
+		"Ability3"		"ability_base_defence_sven"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"ArmorPhysical"				"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
+		"AttackRate"				"10.0"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"600"
+		"AttackRange"				"150"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"320"
+
+		"StatusHealth"              "70"
+        "StatusHealthRegen"         "0.0"
+        "StatusMana"                "100"
+        "StatusManaRegen"           "0.0"
+
+		"MovementTurnRate"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+		"RingRadius"                "50000"
+		"precache"
+		{
+			"model"			"models/heroes/dragon_knight/dragon_knight_dragon.vmdl"
+			"particle"		"particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_corrosive.vpcf"
+			"particle"		"particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_fire.vpcf"
+			"particle"		"particles/units/heroes/hero_dragon_knight/dragon_knight_elder_dragon_frost.vpcf"
+		}
+		"particle_folder"		"particles/units/heroes/hero_dragon_knight"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
+		"VoiceFile"				"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_dragon_knight/dragon_knight_loadout.vpcf"		"loadout"
+			}
+		}
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"4000"
+				"MaxPolygonsLOD1"		"1600"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"body_head"
+				"SlotText"		"#LoadoutSlot_Head"
+				"DisplayInLoadout" "0"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"back"
+				"SlotText"		"#LoadoutSlot_Back"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3500"
+				"MaxPolygonsLOD1"		"1400"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"arms"
+				"SlotText"		"#LoadoutSlot_Arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1500"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"summon"
+				"SlotText"		"#LoadoutSlot_Invoker_ForgeSpirit"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1800"
+				"no_import"		"1"
+				"GeneratesUnits"
+				{
+					"0" "npc_dota_invoker_forged_spirit"
+				}
+			}
+			"6"
+			{
+				"SlotIndex"		"6"
+				"SlotName"		"belt"
+				"SlotText"		"#LoadoutSlot_Belt"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2000"
+				"MaxPolygonsLOD1"		"800"
+			}
+			"7"
+			{
+				"SlotIndex"		"7"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+
+			"10"
+			{
+				"SlotIndex"		"10"
+				"SlotName"		"head_persona_1"
+				"SlotText"		"#LoadoutSlot_Head_Invoker_Kid"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"11"
+			{
+				"SlotIndex"		"11"
+				"SlotName"		"shoulder_persona_1"
+				"SlotText"		"#LoadoutSlot_Shoulder_Invoker_Kid"
+				"TextureWidth"		"512"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"800"
+				"MaxPolygonsLOD1"		"650"
+			}
+			"12"
+			{
+				"SlotIndex"		"12"
+				"SlotName"		"back_persona_1"
+				"SlotText"		"#LoadoutSlot_Back_Invoker_Kid"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"650"
+				"MaxPolygonsLOD1"		"650"
+			}
+			"13"
+			{
+				"SlotIndex"		"13"
+				"SlotName"		"arms_persona_1"
+				"SlotText"		"#LoadoutSlot_Arms_Invoker_Kid"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"800"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"14"
+			{
+				"SlotIndex"		"14"
+				"SlotName"		"summon_persona_1"
+				"SlotText"		"#LoadoutSlot_Invoker_ForgeSpirit_Invoker_Kid"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"1800"
+				"MaxPolygonsLOD1"		"1800"
+				"no_import"		"1"
+				"GeneratesUnits"
+				{
+					"0" "npc_dota_invoker_forged_spirit"
+				}
+			}
+			"15"
+			{
+				"SlotIndex"		"15"
+				"SlotName"		"armor_persona_1"
+				"SlotText"		"#LoadoutSlot_Armor_Invoker_Kid"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"760"
+				"MaxPolygonsLOD1"		"760"
+			}
+			"16"
+			{
+				"SlotIndex"		"16"
+				"SlotName"		"taunt_persona_1"
+				"SlotText"		"#LoadoutSlot_Taunt_Invoker_Kid"
+			}
+
+			// NOTE: PERSONAL SELECTOR MUST BE LAST!
+			"18"
+			{
+				"SlotIndex"		"18"
+				"SlotName"		"persona_selector"
+				"SlotText"		"#LoadoutSlot_Persona_Selector"
+			}
+		}
+	}
+	"npc_dota_hero_huskar"
+	{
+		"Model"					"models/heroes/huskar/huskar.vmdl"
+		"SoundSet"				"Hero_Huskar"
+		"ModelScale"			"0.5"
+		"VersusScale"			"0.5"
+		"HeroSelectSoundEffect"		"Hero_Huskar.Pick"
+		"Ability1"		"ability_base_leap"
+		"Ability2"		"ability_base_attack_sven"
+		"Ability3"		"ability_base_defence_sven"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"ArmorPhysical"				"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
+		"AttackRate"				"10.0"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"600"
+		"AttackRange"				"150"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"320"
+
+		"StatusHealth"              "70"
+        "StatusHealthRegen"         "0.0"
+        "StatusMana"                "100"
+        "StatusManaRegen"           "0.0"
+
+		"MovementTurnRate"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+		"RingRadius"                "50000"
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_huskar/huskar_loadout.vpcf"		"loadout"
+			}
+		}
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"offhand_weapon"
+				"SlotText"		"#LoadoutSlot_OffHand_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"arms"
+				"SlotText"		"#LoadoutSlot_Arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1500"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"4000"
+				"MaxPolygonsLOD1"		"2000"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+		}
+	}
+	"npc_dota_hero_vengefulspirit"
+	{
+		"Model"				"models/heroes/vengeful/vengeful.vmdl"
+		"SoundSet"			"Hero_VengefulSpirit"
+		"ModelScale"		"0.5"
+		"VersusScale"		"0.5"
+		"HeroSelectSoundEffect"		"Hero_VengefulSpirit.Pick"
+		"Ability1"		"ability_base_leap"
+		"Ability2"		"ability_base_attack_sven"
+		"Ability3"		"ability_base_defence_sven"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"ArmorPhysical"				"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
+		"AttackRate"				"10.0"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"600"
+		"ProjectileModel"			"particles/units/heroes/hero_invoker/invoker_base_attack.vpcf"
+		"ProjectileSpeed"			"900"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"350"
+
+		"StatusHealth"              "50"
+        "StatusHealthRegen"         "0.0"
+        "StatusMana"                "500"
+        "StatusManaRegen"           "0.0"
+
+		"MovementTurnRate"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+		"RingRadius"                "50000"
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_vengeful/vengeful_loadout.vpcf"		"loadout"
+			}
+		}
+
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"legs"
+				"SlotText"		"#LoadoutSlot_Legs"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"ambient_effects"
+				"SlotText"		"#LoadoutSlot_Ambient_Effects"
+				"DisplayInLoadout"		"0"
+			}
+		}
+	}
+	"npc_dota_hero_necrolyte"
+	{
+		"Model"				"models/heroes/necrolyte/necrolyte.vmdl"
+		"SoundSet"			"Hero_Necrolyte"
+		"ModelScale"		"0.5"
+		"VersusScale"		"0.5"
+		"HeroSelectSoundEffect"		"Hero_Necrolyte.Pick"
+		"Ability1"		"ability_base_leap"
+		"Ability2"		"ability_base_attack_sven"
+		"Ability3"		"ability_base_defence_sven"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"ArmorPhysical"				"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
+		"AttackRate"				"10.0"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"150"
+		"ProjectileSpeed"			"900"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"350"
+
+		"StatusHealth"              "50"
+        "StatusHealthRegen"         "0.0"
+        "StatusMana"                "500"
+        "StatusManaRegen"           "0.0"
+
+		"MovementTurnRate"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+		"RingRadius"                "50000"
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_necrolyte/necrolyte_loadout.vpcf"		"loadout"
+			}
+		}
+
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"body_head"
+				"SlotText"		"#LoadoutSlot_Beard"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1500"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"4000"
+				"MaxPolygonsLOD1"		"1600"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"legs"
+				"SlotText"		"#LoadoutSlot_Legs"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+			"6"
+			{
+				"SlotIndex"		"6"
+				"SlotName"		"ambient_effects"
+				"SlotText"		"#LoadoutSlot_Ambient_Effects"
+				"DisplayInLoadout"		"0"
+			}
+		}
+	}
+	"npc_dota_hero_windrunner"
+	{
+		"Model"				"models/heroes/windrunner/windrunner.vmdl"
+		"SoundSet"			"Hero_Windrunner"
+		"ModelScale"		"0.5"
+		"VersusScale"		"0.5"
+		"HeroSelectSoundEffect"		"Hero_Windrunner.Pick"
+		"Ability1"		"ability_base_leap"
+		"Ability2"		"ability_base_attack_sven"
+		"Ability3"		"ability_base_defence_sven"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"ArmorPhysical"				"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
+		"AttackRate"				"10.0"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"600"
+		"AttackRange"				"900"
+		"ProjectileModel"			"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+		"ProjectileSpeed"			"1250"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"500"
+
+		"StatusHealth"              "55"
+        "StatusHealthRegen"         "0.0"
+        "StatusMana"                "100"
+        "StatusManaRegen"           "0.0"
+
+		"MovementTurnRate"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+		"RingRadius"                "50000"
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_windrunner/windrunner_loadout.vpcf"		"loadout"
+			}
+		}
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"back"
+				"SlotText"		"#LoadoutSlot_Back"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"offhand_weapon"
+				"SlotText"		"#LoadoutSlot_Quiver"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1500"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+		}
+	}
+	"npc_dota_hero_phantom_assassin"
+	{
+		"Model"				"models/heroes/phantom_assassin/phantom_assassin.vmdl"
+		"SoundSet"			"Hero_PhantomAssassin"
+		"ModelScale"		"0.5"
+		"VersusScale"		"0.5"
+		"HeroSelectSoundEffect"		"Hero_PhantomAssassin.Pick"
+		"Ability1"		"ability_base_leap"
+		"Ability2"		"ability_base_attack_sven"
+		"Ability3"		"ability_base_defence_sven"
+		"Ability4"		""
+		"Ability5"		""
+		"Ability6"		""
+		"Ability10"		""
+		"Ability11"		""
+		"Ability12"		""
+		"Ability13"		""
+		"Ability14"		""
+		"Ability15"		""
+		"Ability16"		""
+		"Ability17"		""
+		"ArmorPhysical"				"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"1"
+		"AttackDamageMax"			"1"
+		"AttackRate"				"10.0"
+		"AttackAnimationPoint"		"0.5"
+		"AttackAcquisitionRange"	"150"
+		"AttackRange"				"900"
+		"ProjectileSpeed"			"1250"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"500"
+
+		"StatusHealth"              "55"
+        "StatusHealthRegen"         "0.0"
+        "StatusMana"                "100"
+        "StatusManaRegen"           "0.0"
+
+		"MovementTurnRate"			"1"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+		"RingRadius"                "50000"
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_phantom_assassin/phantom_assassin_loadout.vpcf"		"loadout"
+			}
+		}
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"3000"
+				"MaxPolygonsLOD1"		"1200"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"back"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"2500"
+				"MaxPolygonsLOD1"		"1000"
+				"SlotText"		"#LoadoutSlot_Back"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"belt"
+				"SlotText"		"#LoadoutSlot_Belt"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1500"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+		}
+	}
+}

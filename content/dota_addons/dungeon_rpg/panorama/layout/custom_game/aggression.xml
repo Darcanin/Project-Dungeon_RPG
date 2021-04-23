@@ -1,0 +1,40 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/aggression.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/aggression.js" />
+    </scripts>
+
+    <snippets>
+
+        <snippet name="PlayerAggress">
+            
+            <Panel class="PlayerAggressContainer">
+                <Panel id="AvotarContainer" class="AvotarContainer">
+                    <Image id="Avotar" class="Avotar" src="#" />
+                </Panel>
+                <Panel id="ProgressContainer" class="ProgressContainer">
+                    <Panel id="Progress" class="Progress">
+
+                    </Panel>
+
+                </Panel>
+                <Panel id="AggressProcent" class="AggressProcent" >
+                    <Label id="Procent" class="Procent" text="40%" />
+                </Panel>
+            </Panel>
+
+        </snippet>
+
+    </snippets>
+
+    <Panel class="MotherShip">
+        <Panel id="spaceBar" class="spaceBar">
+        
+            
+        </Panel>
+    </Panel>
+
+</root>

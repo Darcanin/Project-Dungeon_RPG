@@ -1,0 +1,50 @@
+.hud_main
+{
+    width:100%;
+    height:100%;
+    opacity: 1;
+
+    animation-name: IntroAnim;
+	animation-duration: 17s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+    z-index: 2;
+}
+#Main_HUD{
+    width: 100%;
+    height: 100%;
+    background-image: url("file://{resources}/images/picture/pngegg_edited.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.asdasd {
+    horizontal-align: center;
+    vertical-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+@keyframes 'IntroAnim'
+{
+	0%
+	{
+        opacity:1;
+	}
+
+	65%
+	{
+		opacity:1;
+	}
+
+	90%
+	{
+		opacity:0;
+	}
+
+    100%
+	{
+		opacity:0;
+	}
+}

@@ -1,0 +1,8 @@
+dungeon_bosses
+{
+	material materials/overviews/dungeon_bosses.vmat
+	pos_x 0
+	pos_y 770
+	scale 18.004
+}
+

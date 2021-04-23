@@ -1,0 +1,34 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/hero_interface.css" />
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/hero_interface.js" />
+    </scripts>
+
+    <snippets>
+    </snippets>
+
+    <Panel class="HeroInterface">
+        <Panel id="Hero_Icon" class="Hero_Icon">
+            <!-- <DOTAPortrait id="Portrait" class="Portrait" steamid="local" /> -->
+        </Panel>
+        <Panel id="SpaceLine" class="SpaceLine" /> 
+        <Panel id="Hero_Attributes" class="Hero_Attributes">
+            <Panel id="Hero_Attributes_Section_1" class="Hero_Attributes_Section_1">
+                <Panel id="Title_Hero_Attributes" class="Title_Hero_Attributes">
+                    <Label id="Title_Hero_Attributes_Text" class="Title_Hero_Attributes_Text" text="HERO INTERFACE" />
+                </Panel>
+                <Panel id="Listing_Hero_Attributes" class="Listing_Hero_Attributes">
+                    <Label id="Hero_AttributeContainer_1" class="AttributeContainer Hero_AttributeContainer_1" text="HERO Attribute" />
+                    <Label id="Hero_AttributeContainer_2" class="AttributeContainer Hero_AttributeContainer_2" text="HERO Attribute" />
+                    <Label id="Hero_AttributeContainer_3" class="AttributeContainer Hero_AttributeContainer_3" text="HERO Attribute" />
+                </Panel>
+            </Panel>
+        </Panel>
+
+    </Panel>
+
+</root>
