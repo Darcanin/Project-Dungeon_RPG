@@ -1,6 +1,6 @@
 "DOTAUnits"
 {
-	"01_Golem_Boss"	
+	"npc_dota_boss_golem_spile"	
 	{
 		// General
 		//----------------------------------------------------------------

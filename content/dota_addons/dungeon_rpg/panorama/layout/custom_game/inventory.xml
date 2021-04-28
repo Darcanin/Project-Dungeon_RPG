@@ -9,8 +9,8 @@
 
     <snippets>
     </snippets>
-
-    <Panel class="Inventory">
+<!-- onmouseover="DOTAHUDAbilityShowTooltip()" onmouseout="DOTAHUDAbilityHideTooltip()" -->
+    <Panel class="Inventory" >
         <Panel id="Tspace2" class="Tspace">
             <Label id="Text" class="Textlabel" text="INVENTORY" />
             

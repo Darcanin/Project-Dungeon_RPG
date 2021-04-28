@@ -21,7 +21,7 @@
                         <Label id="QuestTitle" text="#Quest_title" />
                     </Panel>
                     <Panel id="BottomSide">
-                        <Panel id="Background" class="bgd"/>
+                        <Panel id="Background" class="bgd"/> 
                         <Label id="QuestDescription" text="#Quest_Desc" />
                         <Label id="QuestProgress" text="0/1" />
                     </Panel>

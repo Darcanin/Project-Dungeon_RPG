@@ -144,14 +144,29 @@ function DungeonRPG:OnHeroInGame(hHero)
 	--CustomNetTables:GetTableValue("hero_abilities", tostring(hHero:entindex()))
 end
 
+-- Устанавливает фиксированую камеру для всех игроков
 function DungeonRPG:SetCamera()
-    -- Устанавливает фиксированую камеру для всех игроков
-    CustomGameEventManager:Send_ServerToAllClients("SetCamera", {name = zalup, desc = 1})
-    print("SetCamera")
-    for i=0,2 do
-        if (PlayerResource:IsValidPlayer(i)) then
-            local myhero = PlayerResource:GetPlayer(i):GetAssignedHero()
-            PlayerResource:SetCameraTarget(i, myhero)
-        end
+  CustomGameEventManager:Send_ServerToAllClients("SetCamera", {})
+  print("[Camera]:SetCamera")
+  for i=0,2 do
+      if (PlayerResource:IsValidPlayer(i)) then
+          local myhero = PlayerResource:GetPlayer(i):GetAssignedHero()
+          PlayerResource:SetCameraTarget(i, myhero)
+      end
+  end
+end
+
+
+-- Получение индекса босса.
+function FoundEntity( )
+  local entityTable = Entities:FindAllByClassname( 'npc_dota_creature' )
+  for k, v in pairs(entityTable) do
+    if v:GetUnitName() == 'npc_dota_boss_golem_spile' then
+      print(v:GetEntityIndex())
+      local t = {
+        id = v:GetEntityIndex()
+      }
+      CustomGameEventManager:Send_ServerToAllClients("found_boss_id", t)
     end
+  end
 end

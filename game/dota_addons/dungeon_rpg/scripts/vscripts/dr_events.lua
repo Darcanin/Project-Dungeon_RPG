@@ -226,6 +226,7 @@ function DungeonRPG:OnGameRulesStateChange()
 		CustomGameEventManager:Send_ServerToAllClients("Create_aggress_bar", {name = 'name', procent = 5, id = 5})
 	elseif newState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then
 		print("GameState: Game In Progress")
+		FoundEntity()
 		DungeonRPG:SetCamera()
         CustomGameEventManager:Send_ServerToAllClients("Quests_CreateconfigQuest", {name = "Убейте 10 кобольдов!", desc = "Найдите и убейте коболдов!", max = 10, id = 1})
         CustomGameEventManager:Send_ServerToAllClients("Create_aggress_bar", {name = 'name', procent = 5, id = 1})

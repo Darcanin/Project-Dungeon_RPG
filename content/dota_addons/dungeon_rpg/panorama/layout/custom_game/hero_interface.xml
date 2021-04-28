@@ -12,22 +12,41 @@
     </snippets>
 
     <Panel class="HeroInterface">
-        <Panel id="Hero_Icon" class="Hero_Icon">
-            <!-- <DOTAPortrait id="Portrait" class="Portrait" steamid="local" /> -->
+
+        <Panel id="Image_Hero_HP_Bar" class="Image_Hero_HP_Bar"/>
+
+
+        <Panel id="Custom_Exp_Cont" class="Custom_Exp_Cont">
+            <Panel id="Image_Hero_Exp_bgd" class="Image_Hero_Exp_bgd"/>
+            <Panel id="Image_Hero_Completion_Exp_Cont" class="Image_Hero_Completion_Exp_Cont">
+                <Panel id="Image_Hero_Completion_Exp" class="Image_Hero_Completion_Exp"/>
+            </Panel>
+            <Panel id="Image_Hero_Exp" class="Image_Hero_Exp"/>
         </Panel>
+    
+
+        
+
+
+
+        <!-- <Panel id="Hero_Icon" class="Hero_Icon">
+            
+        </Panel>
+        
         <Panel id="SpaceLine" class="SpaceLine" /> 
         <Panel id="Hero_Attributes" class="Hero_Attributes">
             <Panel id="Hero_Attributes_Section_1" class="Hero_Attributes_Section_1">
                 <Panel id="Title_Hero_Attributes" class="Title_Hero_Attributes">
                     <Label id="Title_Hero_Attributes_Text" class="Title_Hero_Attributes_Text" text="HERO INTERFACE" />
                 </Panel>
+                
                 <Panel id="Listing_Hero_Attributes" class="Listing_Hero_Attributes">
                     <Label id="Hero_AttributeContainer_1" class="AttributeContainer Hero_AttributeContainer_1" text="HERO Attribute" />
                     <Label id="Hero_AttributeContainer_2" class="AttributeContainer Hero_AttributeContainer_2" text="HERO Attribute" />
                     <Label id="Hero_AttributeContainer_3" class="AttributeContainer Hero_AttributeContainer_3" text="HERO Attribute" />
                 </Panel>
             </Panel>
-        </Panel>
+        </Panel> -->
 
     </Panel>
 
